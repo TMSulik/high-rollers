@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DKb-mJ-uCG">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SP_21_Touch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJe-n7-yRZ" userLabel="SelectPlay">
+                                <rect key="frame" x="0.0" y="495" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Hit" id="huT-2z-7GD">
+                                        <color key="tintColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hitButton:" destination="BYZ-38-t0r" id="wmy-uD-hQt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yMK-St-TqI"/>
+                                    <barButtonItem title="Stand" id="Jy8-vx-ni1">
+                                        <color key="tintColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="standButton:" destination="BYZ-38-t0r" id="8cP-fX-o5k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Double" id="gXp-54-n6J">
+                                        <color key="tintColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="doubleDownButton:" destination="BYZ-38-t0r" id="2jn-To-uSy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Split" id="c1x-SU-hwL">
+                                        <color key="tintColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="splitButton:" destination="BYZ-38-t0r" id="1Jh-eG-qXb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4Gq-lp-xUL"/>
+                                    <barButtonItem title="Fold" style="plain" id="2C2-K0-iFM">
+                                        <color key="tintColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="foldButton:" destination="BYZ-38-t0r" id="zF4-eX-tV1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.56862745100000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fis-mr-1GT">
+                                <rect key="frame" x="16" y="64" width="45" height="29"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.56862745100000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="4D9-kq-1Oe"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Advice">
+                                            <attributes>
+                                                <color key="NSColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="Georgia"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="adviceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYP-Jz-H7p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4C-ly-Dm1">
+                                <rect key="frame" x="259" y="64" width="45" height="29"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.56862745100000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="PY4-b5-uUk"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Score">
+                                            <attributes>
+                                                <color key="NSColor" red="0.41176470590000003" green="1" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="Georgia"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="scoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alN-dj-fy9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOUBLE DOWN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-iG-bac" userLabel="AdviceText">
+                                <rect key="frame" x="69" y="64" width="144" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="tIh-f7-8BX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-iE-5td" userLabel="InfoButton">
+                                <rect key="frame" x="221" y="64" width="30" height="29"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sT8-m3-Jo5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0um-HP-eDL"/>
+                            <constraint firstItem="ZsP-iG-bac" firstAttribute="top" secondItem="s7M-iE-5td" secondAttribute="top" id="8Su-QG-w98"/>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="baseline" secondItem="fis-mr-1GT" secondAttribute="baseline" id="KU3-ps-SW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zJe-n7-yRZ" secondAttribute="trailing" id="Pnf-kw-fpj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zJe-n7-yRZ" secondAttribute="bottom" constant="29" id="Qc4-JG-PtY"/>
+                            <constraint firstItem="zJe-n7-yRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VAd-vd-kDH"/>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XNm-mx-jG6"/>
+                            <constraint firstItem="ZsP-iG-bac" firstAttribute="bottom" secondItem="s7M-iE-5td" secondAttribute="bottom" id="dZL-zl-geP"/>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="top" secondItem="s7M-iE-5td" secondAttribute="top" id="kwd-Fa-DCN"/>
+                            <constraint firstItem="ZsP-iG-bac" firstAttribute="leading" secondItem="fis-mr-1GT" secondAttribute="trailing" constant="8" symbolic="YES" id="l4L-JU-wem"/>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="bottom" secondItem="s7M-iE-5td" secondAttribute="bottom" id="ozE-Uc-6eq"/>
+                            <constraint firstItem="fis-mr-1GT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qzp-eh-KH9"/>
+                            <constraint firstItem="s7M-iE-5td" firstAttribute="leading" secondItem="ZsP-iG-bac" secondAttribute="trailing" constant="8" id="xD4-QX-XZs"/>
+                            <constraint firstItem="s4C-ly-Dm1" firstAttribute="leading" secondItem="s7M-iE-5td" secondAttribute="trailing" constant="8" symbolic="YES" id="yiT-S5-XUs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="idc-6J-gfK"/>
+                    <connections>
+                        <outlet property="selectPlay" destination="zJe-n7-yRZ" id="GNB-Rv-bkc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.5" y="-213.38028169014083"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cme-lE-osY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DKb-mJ-uCG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RP9-pX-pe0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GJe-eP-UnI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6i-l8-JqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-213.38028169014083"/>
+        </scene>
+    </scenes>
+</document>
